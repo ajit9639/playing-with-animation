@@ -1,0 +1,115 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.rd{ color:Red; font-size:150px;}
+.ble{color:blue;font-size: 150px;}
+.gr{color:#00cc69; font-size: 150px;position: relative;left: -400px;top:400px;}
+.ylo{color:yellow;font-size: 150px;position: relative;left:850px;opacity: 0;}
+.pk{color:#ff80bf;font-size: 150px;position: relative;left:1000px;}
+.slv{color:gray; font-size:50px;position:relative;top:100px;}
+.wit{color:white;font-size:150px;position: relative;top:380px;left:650px;
+opacity: 0;}
+p{text-align: center;font-weight: bold;}
+
+.rd{position: absolute;
+	animation: man 65s 1;
+	}
+	@keyframes man{
+			0%{left:100px;top:100px;}
+			10%{left:1250px;top:100px;opacity:0;}
+			20%{left:1250px;top:100px;opacity:0;}
+			30%{left:1250px;top:100px;opacity:0;}
+			40%{left:1250px;top:100px;opacity:0;}
+			50%{left:1250px;top:100px;opacity:0;}
+			60%{left:1250px;top:100px;opacity:0;}
+			70%{left:1250px;top:100px;opacity:0;}
+			80%{left:1250px;top:100px;opacity:0;}
+			90%{left:1250px;top:100px;opacity:0;}
+			100%{left:1250px;top:100px;opacity:0;}
+		}
+
+		.ylo{
+			animation-delay:5s;
+			animation-name:car;
+			animation-duration: 13s;
+		}
+		@keyframes car{
+			0%{left:850px;top:10px;opacity: 1;}
+			5%{left:850px;top:50px;opacity: 1;}
+			10%{left:850px;top:100px;opacity: 1;}
+			15%{left:850px;top:150px;opacity: 1;}
+			20%{left:850px;top:200px;opacity: 1;}
+			25%{left:850px;top:250px;opacity: 1;}
+			30%{left:850px;top:300px;opacity: 1;}
+			35%{left:850px;top:350px;opacity: 1;}
+			40%{left:850px;top:400px;opacity: 1;}
+			41%{left:850px;top:400px;opacity: 1;}
+			42%{left:850px;top:400px;opacity: 1;}
+			43%{left:850px;top:400px;opacity: 1;}
+			44%{left:850px;top:400px;opacity: 1;}
+			45%{left:850px;top:400px;opacity: 1;}
+			50%{left:700px;top:400px;opacity: 1;}
+			55%{left:600px;top:400px;opacity: 1;}
+			60%{left:500px;top:400px;opacity: 1;}
+			65%{left:400px;top:400px;opacity: 1;}
+			70%{left:300px;top:400px;opacity: 1;}
+			80%{left:200px;top:400px;opacity: 1;}
+			90%{left:100px;top:400px;opacity: 1;}
+			100%{left:-150px;top:400px;opacity: 1;}
+		}
+
+		.slv{
+			animation-name: star;
+			animation-duration: 2s;
+			animation-iteration-count:10;
+		}
+		@keyframes star{
+					10%{color: black;}
+			25%{color: #666666;}
+			50%{color: silver;}
+			100%{color: white;}
+		}
+		.wit{animation-name: wating;
+			animation-duration: 7s;
+			animation-delay: 5s; 
+			animation-iteration-count:1;
+
+				}
+		@keyframes wating{
+			0%{left:600px;top:380px;opacity: 1;}
+			10%{left:550px;top:380px;opacity: 1}
+			20%{left:500px;top:380px;opacity: 1}
+			30%{left:450px;top:380px;opacity:1;}
+			40%{left:400;top:380px;opacity:1;}
+			80%{left:390px;top:380px;opacity: 1;}
+			100%{left:390px;top:380px;opacity: 0;}
+			
+			
+		}
+
+		#office{position: absolute;top:250px;left:10px;}
+		#garage{position: absolute;top:250px;left:1100px;}
+		#home{position: absolute;top:480px;left:10px;}
+		#lift{position: absolute;top:450px;left:990px;}
+		body{background-color: #666666;}
+		p{background-color: #e580ff;color:#99004d;}
+
+</style>
+</head>
+<body>
+<p>MY IMAGINATION:</p>
+<p>A MAN IS COMMING OUT OF HIS OFFICE THEN GOING TO HOME BY CAR</p>
+<i class="fa fa-building ble"></i>
+<i class="fa fa-male rd"></i>
+<i class="fa fa-home pk"></i>
+<i class="fa fa-car ylo"></i>
+<i class="fa fa-home gr"></i>
+<i class="fa fa-star slv"></i>
+<i class="fa fa-male wit"></i>
+<p id="office">THIS IS MY OFFICE</p>
+<p id="garage">THIS IS MY GARAGE</p>
+<p id="home">THIS IS MY HOME</p>
+<p id="lift">I WANT LIFT</p>
+</body>
+</html>

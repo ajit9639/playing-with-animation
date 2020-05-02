@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>my snake game</title>
+<style>
+	body{padding: 0px;
+		margin:0px;}
+	#snake{height:20px;
+			width:100px;
+			background-color: red;
+			border-radius: 20px;
+			margin-top: 50px;
+			animation-name: snake;
+			animation-duration: 25s;
+			animation-iteration-count: 1;
+			position: relative;
+			top:6px;
+			opacity:0;
+		}
+		@keyframes snake{
+			0%{left:0px;top:6px;opacity:1;}
+			5%{left:200px;top:6px;opacity:1;}
+			10%{left:400px;top:6px;opacity:1;}
+			15%{left:800px;top:6px;opacity:1;}
+			20%{left:1250px;top:6px;opacity:1;}
+			22%{left:1250px;top:6px;opacity:1;   transform: rotate(0deg);}
+			23%{left:1250px;top:200px;opacity:1; transform: rotate(90deg);}
+			24%{left:1250px;top:200px;opacity:1; transform: rotate(180deg);}
+			25%{left:1250px;top:200px;opacity:1;}
+			30%{left:800px;top:200px;opacity:1;}
+			35%{left:400px;top:200px;opacity:1;}
+			40%{left:0px;top:200px;opacity:1; transform: rotate(180deg);}
+			45%{left:0px;top:400px;opacity:1; transform: rotate(90deg)}
+			50%{left:400px;top:400px;opacity:1; transform: rotate(0deg)}
+			55%{left:800px;top:400px;opacity:1;}
+			60%{left:1250px;top:400px;opacity:1; transform: rotate(0deg)}
+			65%{left:1250px;top:500px;opacity:1;}
+			70%{left:800px;top:500px;opacity:1;}
+			80%{left:400px;top:500px;opacity:1;}
+			100%{left:0px;top:500px;opacity:1;}
+		}
+		#box1{height:25px;
+			width:25px;
+			background-color: red;
+			border-radius: 30px;
+			position:absolute;
+			left:400px;
+			top:45px;
+			animation-name: box;
+			animation-duration: 3s;
+			animation-iteration-count: 1;
+			opacity: 0;
+		}
+		@keyframes box{
+			0%{height:50px;width:50px;opacity: 1;}
+			30%{height:30px;width:30px;opacity: 1;}
+			40%{height:50px;width:50px;opacity: 1;}
+			60%{height:30px;width:30px;opacity: 1;}
+		}
+		#box2{height:25px;
+			width:25px;
+			background-color: red;
+			border-radius: 30px;
+			position:absolute;
+			left:800px;
+			top:45px;
+			animation-name: box;
+			animation-duration: 3s;
+			animation-delay: 2s;
+			animation-iteration-count: 1;
+			opacity: 0;
+		}
+		@keyframes box{
+			0%{height:50px;width:50px;opacity: 1;}
+			30%{height:30px;width:30px;opacity: 1;}
+			40%{height:50px;width:50px;opacity: 1;}
+			60%{height:30px;width:30px;opacity: 1;}
+		}
+		#box3{height:25px;
+			width:25px;
+			background-color: red;
+			border-radius: 30px;
+			position:absolute;
+			left:800px;
+			top:250px;
+			animation-name: box;
+			animation-duration: 3s;
+			animation-delay: 6s;
+			animation-iteration-count: 1;
+			opacity: 0;
+		}
+		@keyframes box{
+			0%{height:50px;width:50px;opacity: 1;}
+			30%{height:30px;width:30px;opacity: 1;}
+			40%{height:50px;width:50px;opacity: 1;}
+			60%{height:30px;width:30px;opacity: 1;}
+		}
+		#box4{height:25px;
+			width:25px;
+			background-color: red;
+			border-radius: 30px;
+			position:absolute;
+			left:400px;
+			top:250px;
+			animation-name: box;
+			animation-duration: 3s;
+			animation-delay: 8s;
+			animation-iteration-count: 1;
+			opacity: 0;
+		}
+		@keyframes box{
+			0%{height:50px;width:50px;opacity: 1;}
+			30%{height:30px;width:30px;opacity: 1;}
+			40%{height:50px;width:50px;opacity: 1;}
+			60%{height:30px;width:30px;opacity: 1;}
+		}
+		#box5{height:25px;
+			width:25px;
+			background-color: red;
+			border-radius: 30px;
+			position:absolute;
+			left:200px;
+			top:450px;
+			animation-name: box;
+			animation-duration: 3s;
+			animation-delay: 10s;
+			animation-iteration-count: 1;
+			opacity: 0;
+		}
+		@keyframes box{
+			0%{height:50px;width:50px;opacity: 1;}
+			30%{height:30px;width:30px;opacity: 1;}
+			40%{height:50px;width:50px;opacity: 1;}
+			60%{height:30px;width:30px;opacity: 1;}
+		}
+		#box6{height:25px;
+			width:25px;
+			background-color: red;
+			border-radius: 30px;
+			position:absolute;
+			left:800px;
+			top:450px;
+			animation-name: box;
+			animation-duration: 3s;
+			animation-delay: 12s;
+			animation-iteration-count: 1;
+			opacity: 0;
+		}
+		@keyframes box{
+			0%{height:50px;width:50px;opacity: 1;}
+			30%{height:30px;width:30px;opacity: 1;}
+			40%{height:50px;width:50px;opacity: 1;}
+			60%{height:30px;width:30px;opacity: 1;}
+		}
+		#box7{height:25px;
+			width:25px;
+			background-color: red;
+			border-radius: 30px;
+			position:absolute;
+			left:200px;
+			top:550px;
+			animation-name: box;
+			animation-duration: 3s;
+			animation-delay: 20s;
+			animation-iteration-count: 1;
+			opacity: 0;
+		}
+		@keyframes box{
+			0%{height:50px;width:50px;opacity: 1;}
+			30%{height:30px;width:30px;opacity: 1;}
+			40%{height:50px;width:50px;opacity: 1;}
+			60%{height:30px;width:30px;opacity: 1;}
+		}
+		#box8{height:25px;
+			width:25px;
+			background-color: red;
+			border-radius: 30px;
+			position:absolute;
+			left:800px;
+			top:550px;
+			animation-name: box;
+			animation-duration: 3s;
+			animation-delay: 15s;
+			animation-iteration-count: 1;
+			opacity: 0;
+		}
+		@keyframes box{
+			0%{height:50px;width:50px;opacity: 1;}
+			30%{height:30px;width:30px;opacity: 1;}
+			40%{height:50px;width:50px;opacity: 1;}
+			60%{height:30px;width:30px;opacity: 1;}
+		}
+		h1{color:red;
+			position: absolute;
+			animation-name: end;
+			animation-delay:25s ;
+			animation-duration: 10s;
+			opacity:0;
+		}
+		@keyframes end{
+			0%{top:200px;left:500px;opacity: 1;}
+			50%{top:200px;left:500px;opacity: 1;}
+			100%{top:200px;left:500px;opacity: 1;}
+		}
+		
+</style>
+</head>
+<body>
+<div id="snake">
+</div>
+<div id="box1">
+</div>
+<div id="box2">
+</div>
+<div id="box3">
+</div>
+<div id="box4">
+</div>
+<div id="box5">
+</div>
+<div id="box6">
+</div>
+<div id="box7">
+</div>
+<div id="box8">
+</div>
+<h1>GAME OVER</h1>
+</body>
+</html>

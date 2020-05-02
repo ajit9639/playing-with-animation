@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<title>road</title>
+	<style>
+		#road1{height:150px;
+				width: 1300px;
+				border-style: dashed;
+				border-width: 10px;
+				border-radius: 130px 130px 10px 10px;
+				background-color: red;}
+		#road2{height:460px;
+				width: 150px;
+				border-style: dashed;
+				border-width: 10px;
+				border-radius: 10px 130px 130px 10px;
+				background-color: red;
+				position: relative;
+				left:1150px;
+				top:-170px;}
+		#road3{height:150px;
+				width: 1300px;
+				border-style: dashed;
+				border-width: 10px;
+				border-radius: 10px 10px 130px 130px;
+				background-color: red;
+				position: absolute;
+				top:320px;	}
+		#road4{height:460px;
+				width: 150px;
+				border-style: dashed;
+				border-width: 10px;
+				border-radius: 130px 10px 10px 130px;
+				background-color: red;
+				position: absolute;
+				left:0px;
+				top:10px;}
+
+				#r1{position: absolute;
+					top:-10px;
+					left:180px;
+					font-size: 80px;
+					color:white;}
+				#r2{position: absolute;
+					top:300px;
+					left:180px;
+					font-size: 80px;
+					color:white;}
+		.my_car{color:blue;
+			font-size: 130px;
+			position: absolute;
+			top:20px;
+			animation-name: car;
+			animation-duration: 10s;
+			animation-iteration-count: 1;
+		}
+		@keyframes car{
+			0%{left:0px;}
+			50%{left:1150px;top:20px;}
+			70%{left:1150px;top:360px;}
+			80%{left:10px;top:360px;}
+			100%{left:0;top:10px;}
+		}
+
+
+	</style>
+</head>
+<body>
+	
+<div id="road1">
+	</div>
+<div id="road3">
+	</div>
+<div id="road2">
+</div>
+<div id="road4">
+</div>
+<p id="r1">THIS IS A HIGHWAY ROAD</p>
+<p id="r2">THIS IS A HIGHWAY ROAD</p>
+<i class="fa fa-car my_car"></i>
+</body>
+</html>

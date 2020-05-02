@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sample_snake</title>
+<style>
+	#snake{height:20px;width:200px;background-color: red;border:2px solid red;
+		border-radius: 20px;
+		animation-name: snake;
+		animation-duration: 4s;
+		animation-iteration-count: 1;
+		position: absolute;}
+		@keyframes snake{
+			0%{left:0;top:0px;height:20px;width:200px;}
+			20%{left:500px;top:0;height:20px;width:200px;}
+			40%{left:1100px;top:0px;height:20px;width:200px;}
+			60%{left:1100px;top:100;height:200px;width:20px;}
+	80%{left:700px;top:100px;height:20px;width:200px;}
+			90%{left:500px;top:100px;height:20px;width:200px;}
+			100%{left:0px;top:100px;height:20px;width:200px;}
+
+		}
+</style>
+</head>
+<body>
+<div id="snake"></div>
+</body>
+</html>
